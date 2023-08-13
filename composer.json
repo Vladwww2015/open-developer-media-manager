@@ -1,0 +1,23 @@
+{
+    "name": "open-developer-ext/media-manager",
+    "description": "Media manager for open-developer",
+    "type": "library",
+    "keywords": ["open-developer", "media", "manager"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0",
+        "open-developer/open-developer": ">=1.0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenDeveloper\\Developer\\Media\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OpenDeveloper\\Developer\\Media\\MediaServiceProvider"
+            ]
+        }
+    }
+}
